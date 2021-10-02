@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:stretchColumns="0,1"
+        android:id="@+id/table"
+        tools:context=".MainActivity">
+
+        <TableRow android:layout_height="200dp">
+            <EditText android:id="@+id/Text_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:hint="@string/enter_android_version"
+                android:textSize="25sp"
+                android:textColor="#8C8989"
+                />
+        </TableRow>
+        <Space android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TableRow>
+            <EditText android:id="@+id/Text_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:ems="10"
+                android:hint="@string/enter_android_code_name"
+                android:textColor="#8C8989"
+                android:textSize="25sp"/>
+        </TableRow>
+        <Space android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TableRow>
+            <Button android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+               android:background="@drawable/custom_rounded_corners"
+                android:text="@string/add" />
+        </TableRow>
+        <Space android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <TableRow>
+            <TextView android:id="@+id/th1"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/version"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="#DC91AC"/>
+            <TextView android:id="@+id/th2"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:background="#DC91AC"
+                android:layout_margin="5dp"
+                android:layout_span="1"
+                android:text="@string/code_name"
+                android:textSize="20sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/th3"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="@string/android_9_0"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:background="#DC91AC"/>
+            <TextView android:id="@+id/th4"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:background="#DC91AC"
+                android:layout_margin="5dp"
+                android:layout_span="1"
+                android:text="@string/pie"
+                android:textSize="20sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:id="@+id/th5"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:background="#DC91AC"
+                android:text="@string/android_8_0"
+                android:textSize="20sp"
+                android:layout_margin="5dp" />
+            <TextView android:id="@+id/th6"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:background="#DC91AC"
+                android:layout_margin="5dp"
+                android:layout_span="1"
+                android:text="@string/oreo"
+                android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
